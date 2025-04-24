@@ -1,6 +1,6 @@
 # simple_calc
 
-A new Flutter project.
+A calculator Flutter project.
 
 ## Getting Started
 
