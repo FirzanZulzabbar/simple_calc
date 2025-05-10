@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'splash_screen.dart';
 import 'advanced_calculator.dart';
 import 'package:math_expressions/math_expressions.dart';
+import 'bmi_calculator.dart'; // ⬅️ tambahkan import
 
 void main() {
   runApp(const CalculatorApp());
@@ -21,7 +22,8 @@ class CalculatorApp extends StatelessWidget {
       ),
       home: const SplashScreen(), // Splash screen tetap jadi halaman pertama
       routes: {
-        '/advanced': (context) => const AdvancedCalculatorPage(), // ✅ ROUTE baru
+        '/advanced': (context) => const AdvancedCalculatorPage(), // Route Advance Calc
+        '/bmi': (context) => BMICalculatorScreen(),
       },
     );
   }

@@ -42,7 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
               Image.asset('assets/logo.png', height: 100),
               const SizedBox(height: 20),
               const Text(
-                "SimpleCalc",
+                "MultiCalc",
                 style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 10),
@@ -66,6 +66,19 @@ class _SplashScreenState extends State<SplashScreen> {
                     textStyle: const TextStyle(fontSize: 18),
                   ),
                 ),
+              const SizedBox(height: 12),
+              ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/bmi');
+                },
+                icon: const Icon(Icons.fitness_center),
+                label: const Text("Kalkulator BMI"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.pinkAccent,
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+                ),
+              ),
             ],
           ),
         ),
